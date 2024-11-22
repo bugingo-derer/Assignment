@@ -36,16 +36,16 @@
                   <br>
                   
                   <label>Enter among the following: </label><br>
-                  <input type="checkbox" id="parent" name="per" value="parent">
+                  <input required type="checkbox" id="parent" name="per" value="parent">
                   <label for="per">Parent</label>
-                  <input type="checkbox" id="guardian" name="per" value="guardian">
+                  <input required type="checkbox" id="guardian" name="per" value="guardian">
                   <label for="">Guardian</label>
-                  <input type="checkbox" id="none" name="per" value="none">
+                  <input required type="checkbox" id="none" name="per" value="none">
                   <label for="">None</label><br><br>
                   <label for="">Nationality: </label>
-                  <input type="text" name="nationality" placeholder="Enter your nationality"><br>
+                  <input required type="text" name="nationality" placeholder="Enter your nationality"><br>
                   <label for="location" >Choose the province you came from:</label>
-                  <select name="location">
+                  <select required name="location">
                     <option value="North">Northern province</option>
                     <option value="South">Southern province</option>
                     <option value="West">western province</option>
@@ -59,16 +59,16 @@
                 <fieldset class="playerClass">
                   <legend>Player information:</legend>
                   <label>Gender:</label>
-                  <input type="radio" name="gender" value="male">male
-                  <input type="radio" name="gender" value="female">female
+                  <input required type="radio" name="gender" value="male">male
+                  <input required type="radio" name="gender" value="female">female
                   <br><br>
                   <label for="zone">Enter the zone of the player: </label><br>
-                  <input type="radio" name="Zone" value="Defence">Defence
-                  <input type="radio" name="Zone" value="Midfield">Midfield
-                  <input type="radio" name="Zone" value="Attack">Attack
+                  <input required type="radio" name="Zone" value="Defence">Defence
+                  <input required type="radio" name="Zone" value="Midfield">Midfield
+                  <input required type="radio" name="Zone" value="Attack">Attack
                   <br><br>
                   <label>Choose the position you play on: </label>
-                  <select name="Position" id="">
+                  <select required name="Position" id="">
                     <optgroup label="Select place of the player: ">
                     <option value="GK" style="text-transform: lowercase;">gooal keeper</option>
                     <option value="LB" style="text-transform: lowercase;">left back</option>
@@ -83,10 +83,10 @@
                   </select>
                     <br>
                     <label for="skillRange">Skills Rating:</label>
-                    0<input type="range" name="skillRange" min="0" max="5">5
+                    0<input required type="range" name="skillRange" min="0" max="5">5
                   <br><br>
                   <label for="comment">comment on yourself: </label>
-                  <textarea name="comment" id="comment">
+                  <textarea required name="comment" id="comment">
                      
                   </textarea>
               </fieldset>
@@ -94,22 +94,22 @@
               <fieldset class="loginClass">
                 <legend>Login credentials:</legend>
                 <label for="logemail">E-mail input:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="email" name="logemail" placeholder="bugingoderer@gmail.com" size="24"><br>
+                <input required type="email" name="logemail" placeholder="bugingoderer@gmail.com" size="24"><br>
                 <label for="password">Password input:</label>
-                <input type="password" placeholder="Enter the password" title="password must contain numbers and symbols" size="24"><br>
+                <input required type="password" placeholder="Enter the password" title="password must contain numbers and symbols" size="24"><br>
                 <label>Select the image of the child: </label>
                 <input type="file" name="image"><br><br>
                 <label for="time">Set the time for the registering: </label>
-                <input type="datetime-local"id="time" value="" name="time">
+                <input required type="datetime-local"id="time" value="" name="time">
               </fieldset>
               <br><br><br>
               <fieldset>
                 <legend>Health issues and Disability</legend>
                 <label for="health">Write the special health issues or disability you have</label>
-                <textarea name="health" id=""></textarea><br>
+                <textarea required name="health" id=""></textarea><br>
 
                 <label for="color">Choose the color:</label>
-                <input type="color" name="color" value="#AFA5AF">
+                <input type="color" name="color" value="#AFA5AF" required>
               </fieldset>
               <table>
                 <tr>
@@ -132,7 +132,7 @@
     </table>
       <div class="footer">
         <footer>
-          <p style="">
+          <p>
             Please fill the whole form for being allowed to be registed
             in the football academy. Some places allowed to not fill them. For 
             example the "Choose file."
@@ -148,5 +148,3 @@
     </div>
   </body>
 </html>
-
-<!-- http://127.0.0.1:5500/form.html?fullName=Bugingo+Eric+Derick&email=bugingoderer%40gmail.com&per=parent&zone=Midfield&plyerPlace=DM&comment=++++++++++++comment+on+yourself%0D%0A++++++++++I+don%27t+have+any+other+academy+i+have+attended+later.+This+is+my+first+academy -->
