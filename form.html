@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootBall Academy Login</title>
+    <link id="stylesheet" rel="stylesheet" href="formStyle.css">
+    <script src="form.js"></script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="head">
+          <div class="header">
+            <h1>FootBall Academy Registering</h1>
+            <img id="football" src="football.jpg" alt="Football">
+          </div>
+        </td>   
+        <td id="form">
+          <div class="form">
+            <form action="form.php" target="_self" method="POST">
+              <fieldset class="mainClass">
+                <legend>Main information:</legend>
+                  <label for="fullName">Full name:</label>
+                  <input type="text" id="fullname" name="fullName" Placeholder="Enter your full name" title="Enter your full name"><br>
+                  <label for="date">Enter your birth day:</label>
+                  <input type="date" name="date" min="2008-01-01" max="2011-12-12"><br>
+                  <br>
+                  <label for="parName">Name of the parent: </label>
+                  <input type="text" name="parName" placeholder="Enter the name of the parent or the Guardian"><br>
+                  <label for="email">Parental e-mail:</label>
+                  <input type="email" name="paremail" placeholder="example123@gmail.net">
+                  <br>
+                  <label for="telNumber">Parent Phone number:</label>
+                  <input type="tel" name="telNumber" placeholder="Enter the telephone number" >
+                  <br>
+                  
+                  <label>Enter among the following: </label><br>
+                  <input type="checkbox" id="parent" name="per" value="parent">
+                  <label for="per">Parent</label>
+                  <input type="checkbox" id="guardian" name="per" value="guardian">
+                  <label for="">Guardian</label>
+                  <input type="checkbox" id="none" name="per" value="none">
+                  <label for="">None</label><br><br>
+                  <label for="">Nationality: </label>
+                  <input type="text" name="nationality" placeholder="Enter your nationality"><br>
+                  <label for="location" >Choose the province you came from:</label>
+                  <select name="location">
+                    <option value="North">Northern province</option>
+                    <option value="South">Southern province</option>
+                    <option value="West">western province</option>
+                    <option value="East">eastern province</option>
+                    <option value="Kigali">Kigali city</option>
+                    <option value="None">Out of the country</option>
+                  </select>
+                  <br>
+                </fieldset>
+                <br><br><br>
+                <fieldset class="playerClass">
+                  <legend>Player information:</legend>
+                  <label>Gender:</label>
+                  <input type="radio" name="gender" value="male">male
+                  <input type="radio" name="gender" value="female">female
+                  <br><br>
+                  <label for="zone">Enter the zone of the player: </label><br>
+                  <input type="radio" name="Zone" value="Defence">Defence
+                  <input type="radio" name="Zone" value="Midfield">Midfield
+                  <input type="radio" name="Zone" value="Attack">Attack
+                  <br><br>
+                  <label>Choose the position you play on: </label>
+                  <select name="Position" id="">
+                    <optgroup label="Select place of the player: ">
+                    <option value="GK" style="text-transform: lowercase;">gooal keeper</option>
+                    <option value="LB" style="text-transform: lowercase;">left back</option>
+                    <option value="RB" style="text-transform: lowercase;">right back</option>
+                    <option value="CB" style="text-transform: lowercase;">centre back</option>
+                    <option value="LW" style="text-transform: lowercase;">left winger</option>
+                    <option value="RW" style="text-transform: lowercase;">right winger</option>
+                    <option value="DM" style="text-transform: lowercase;">defence midfielder</option>
+                    <option value="CM" style="text-transform: lowercase;">centre midfielder</option>
+                    <option value="AM" style="text-transform: lowercase;">attack midfielder</option>
+                    <option value="CF" style="text-transform: lowercase;">centre foward</option>
+                  </select>
+                    <br>
+                    <label for="skillRange">Skills Rating:</label>
+                    0<input type="range" name="skillRange" min="0" max="5">5
+                  <br><br>
+                  <label for="comment">comment on yourself: </label>
+                  <textarea name="comment" id="comment">
+                     
+                  </textarea>
+              </fieldset>
+              <br><br><br>
+              <fieldset class="loginClass">
+                <legend>Login credentials:</legend>
+                <label for="logemail">E-mail input:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" name="logemail" placeholder="bugingoderer@gmail.com" size="24"><br>
+                <label for="password">Password input:</label>
+                <input type="password" placeholder="Enter the password" title="password must contain numbers and symbols" size="24"><br>
+                <label>Select the image of the child: </label>
+                <input type="file" name="image"><br><br>
+                <label for="time">Set the time for the registering: </label>
+                <input type="datetime-local"id="time" value="" name="time">
+              </fieldset>
+              <br><br><br>
+              <fieldset>
+                <legend>Health issues and Disability</legend>
+                <label for="health">Write the special health issues or disability you have</label>
+                <textarea name="health" id=""></textarea><br>
+
+                <label for="color">Choose the color:</label>
+                <input type="color" name="color" value="#AFA5AF">
+              </fieldset>
+              <table>
+                <tr>
+                  <td>
+                    <input id="submitImage" type="image" src="2.submitImage.png" style="width: 50px;height: 50px;" alt="submit"><br>
+                  </td>
+                  <td>
+                    <input type="submit" value="submit">
+                  </td>
+                  <td>
+                    <input type="reset" value="reset">
+                  </td>
+                </tr>
+              </table> 
+            </form>
+        </td>   
+      </tr>
+      <tr>
+      </tr>
+    </table>
+      <div class="footer">
+        <footer>
+          <p style="">
+            Please fill the whole form for being allowed to be registed
+            in the football academy. Some places allowed to not fill them. For 
+            example the "Choose file."
+            The color you choose will be the background color of where form 
+            information will be displayed.
+          </p>
+          <div class="buttons">
+            <button id="f1" onclick="mystyling()">Alternative styling</button>
+            <button id="f2" onclick="Rmystyling()">Reset styling</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- http://127.0.0.1:5500/form.html?fullName=Bugingo+Eric+Derick&email=bugingoderer%40gmail.com&per=parent&zone=Midfield&plyerPlace=DM&comment=++++++++++++comment+on+yourself%0D%0A++++++++++I+don%27t+have+any+other+academy+i+have+attended+later.+This+is+my+first+academy -->
